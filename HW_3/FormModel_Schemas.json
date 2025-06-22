@@ -1,0 +1,57 @@
+// Схема формальной связи data_replications.manager.created
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Meta": {
+      "type": "object",
+      "properties": {
+        "MessageId": {
+          "type": "integer"
+        },
+        "PublishedAt": {
+          "type": "string"
+        },
+        "CreatedAt": {
+          "type": "string"
+        },
+        "Version": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "MessageId",
+        "PublishedAt",
+        "CreatedAt",
+        "Version"
+      ]
+    },
+    "Id": {
+      "type": "integer"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "UpdatedAt": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Meta",
+    "Id",
+    "CreatedAt",
+    "UpdatedAt",
+    "Name",
+    "Email",
+    "Phone"
+  ]
+}

@@ -1,0 +1,42 @@
+// схема события для функционального события domain.candidate_hiring.assigned_task.completed_correct 
+// я что-то не смог придумать что еще сюда можно было бы дополнить, пускай будет notifications
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Meta": {
+      "type": "object",
+      "properties": {
+        "MessageId": {
+          "type": "integer"
+        },
+        "PublishedAt": {
+          "type": "string"
+        },
+        "CreatedAt": {
+          "type": "string"
+        },
+        "Version": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "MessageId",
+        "PublishedAt",
+        "CreatedAt",
+        "Version"
+      ]
+    },
+    "TaskId": {
+      "type": "integer"
+    },
+    "CandidateId": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "Meta",
+    "TaskId",
+    "CandidateId"
+  ]
+}
